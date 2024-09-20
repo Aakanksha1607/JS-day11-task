@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dlist=document.createElement("dl")
+        let ditem1=document.createElement("dt")
+        let ditem2= document.createElement("dt")
+        let ditem3=  document.createElement("dt")
+        let dd1=document.createElement("dd")
+        let dd2= document.createElement("dd")
+        let dd3=  document.createElement("dd")
+
+        ditem1.innerHTML="<b>HTML :</b>"
+        ditem2.innerHTML="<b>CSS :</b>"
+        ditem3.innerHTML="<b>JAVASCRIPT :</b"
+        dd1.innerText= " HTML is used to create wepages"
+        dd2.innerText="CSS is used to style the webpages"
+        dd3.innerText="JavaScript is  used to  add  interactivity to  the  webpages"
+
+        ditem1.appendChild(dd1)
+        ditem2.appendChild(dd2)
+        ditem3.appendChild(dd3)
+
+        dlist.appendChild(ditem1)
+        dlist.appendChild(ditem2)
+        dlist.appendChild(ditem3)
+
+        document.body.appendChild(dlist)
+
+
+
+    </script>
+</body>
+</html>
